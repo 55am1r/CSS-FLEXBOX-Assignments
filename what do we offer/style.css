@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 45vh;
+    margin-top: 15vh;
+    gap: 10px;
+    padding: 0;
+}
+
+.container .contents-1,
+.contents-2,
+.contents-3,
+.contents-4 {
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    height: 15vh;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+
+.icon i {
+    font-size: 4rem;
+    color: gold;
+}
+.desc {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.desc h1,
+p {
+    color: rgb(41, 41, 41);
+    font-size: 3rem;
+    font-family: 'Roboto',
+        sans-serif;
+    text-align: justify;
+}
+
+.desc p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contents-1:hover {
+    box-shadow: 4px 4px 20px 0.2px rgb(114, 114, 114);
+    transform: translateY(0.5rem);
+}
+
+.contents-2:hover {
+    box-shadow: 4px 4px 20px 0.2px rgb(114, 114, 114);
+    transform: translateY(0.5rem);
+}
+
+.contents-3:hover {
+    box-shadow: 4px 4px 20px 0.2px rgb(114, 114, 114);
+    transform: translateY(0.5rem);
+}
+
+.contents-4:hover {
+    box-shadow: 4px 4px 20px 0.2px rgb(114, 114, 114);
+    transform: translateY(0.5rem);
+}
+
+.contents-1:hover .fa-beat {
+    --fa-animation-duration: 0s;
+}
+
+.contents-2:hover .fa-spin {
+    --fa-animation-duration: 0s;
+}
+
+.contents-3 .fa-spin {
+    --fa-animation-duration: 1s;
+}
+
+.contents-3:hover .fa-spin {
+    --fa-animation-duration: 0s;
+}
+
+.contents-4 .fa-beat-fade {
+    --fa-animation-duration: 1.5s;
+}
+
+.contents-4:hover .fa-beat-fade {
+    --fa-animation-duration: 0s;
+}
